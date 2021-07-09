@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+  }
+
+#container, #container > .row {
+    min-height: 100vh; /* Enforce full-screen styles for the contain and its direct child */
+  }
+
+#navigation-col {
+    flex: 300px 0 0;
+    padding-top: 35px; /* Use padding, not margin, because of the background color */
+}
+
+.navigation-item:hover { }
+
+#messages-container {
+    /* height: some-value; */
+}
+
+#input-container textarea {
+    /* height: some-value; */
+}
+
+.col-avatar {
+    flex: 50px 0 0; /* Enforce specific width of the avatar image */
+}
+
+.avatar {
+    border-radius: 50%; /* Makes the avatar look like a circle */
+}
