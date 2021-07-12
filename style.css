@@ -1,32 +1,91 @@
 body {
     margin: 0;
-  }
-
-#container, #container > .row {
-    min-height: 100vh; /* Enforce full-screen styles for the contain and its direct child */
-  }
-
-#navigation-col {
-    flex: 300px 0 0;
-    padding-top: 35px; /* Use padding, not margin, because of the background color */
+    font-family: Helvetica;
 }
 
-.navigation-item:hover { }
-
-#messages-container {
-    /* height: some-value; */
+/* Manages titles in page */
+h4 {
+    font-weight: bold;
+    margin: 30px 0px 10px 0px;
 }
 
-#input-container textarea {
-    /* height: some-value; */
+p {
+    margin: 0px;
 }
 
-.col-avatar {
-    flex: 50px 0 0; /* Enforce specific width of the avatar image */
+/* Controls main row spanning entire page */
+.my-row{
+    height: 100%;
+}
+
+/* Controls left column containing navigation items */
+.nav-col{
+    display: flex;
+    flex-direction: column;
+    background-color: #dce7ef;
+}
+
+/* Controls 'button' layout in navigation column */
+.navi-btn {
+    padding: 10px 0px 10px 30px;
+    border-radius: 5px;
+}
+
+/* Controls on-mouse hover action in navigation col */
+label:hover {
+    transition: 0.15s ease-out;
+    background: #c7d2dd;
+}
+
+/* Controls right column containing message items */
+.msg-col {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+/* Container for mesage contents including avatar, name, date, message */
+.msg-box {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    background-color: #f6f8f9;
+    border: 2px solid #e6e5e5;
+    border-radius: 5px;
+    padding: 15px 0px 15px 15px;
+}
+
+/* Format display name and date in message container */
+.msg-title {
+    padding-left: 10px;
+    margin: 0px;
+    line-height: 0.5em;
+}
+
+.msg-text {
+    padding-top: 10px; /* Add some space above message text */
 }
 
 .avatar {
     border-radius: 50%; /* Makes the avatar look like a circle */
 }
+
+.chat-box {
+    display: flex;
+    align-self: flex-end;
+}
+
+
+.message-row{
+    background-color: #f6f8f9;
+}
+
+#input-container textarea {
+    display: flex;
+    height: 2px;
+    align-self: flex-end;
+}
+
+
 
 

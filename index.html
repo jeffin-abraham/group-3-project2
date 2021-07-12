@@ -16,24 +16,80 @@
     <link rel="stylesheet" href="style.css">
     
     
-    <title>Document</title>
+    <title>Project2</title>
 </head>
 <body>
-    <div id="container" class="fluid">
-      <!--Page Layout Grid: 2 column 1 row-->
-      <div id="row1" class="row">
-        <div id="column1">
-          <!--Left column consists of 2 rows-->
-
-
-        </div>
-        <div id="column2">
-
-          
-        </div>
-
-      </div>
-
-    </div>
+    <div class="container-fluid vh-100">
+        <!-- Row containing the two major columns -->
+        <div class="row my-row">
+            <!-- Left navigation column -->
+            <div class="col-3  nav-col">
+                <h4>Channels</h4>
+                <label class="navi-btn">General</label>
+                <label class="navi-btn">Marketing</label>
+                <label class="navi-btn">Operations</label>
+                <label class="navi-btn">Random</label>
+                <label class="navi-btn">Standups</label>
+                <h4>Direct Messages</h4>
+                <label class="navi-btn">Connor Steele</label>
+                <label class="navi-btn">Taylor LaMar</label>
+                <label class="navi-btn">Martyn Lmao</label>
+            </div>
+            <!-- Right chat-window column -->
+            <div class="col-9 msg-col">
+                <h4>Business Communication Platform</h4>
+                <div class="msg-box">
+                    <div class="col-1">
+                        <img src="connor-profile-picture.jpeg" 
+                            alt="connor-profile-picture" 
+                            class="avatar" width="40px" height="40px"/>
+                    </div>
+                    <div class="col-11 msg-title">
+                        <h5><b>Connor Steele</b></h5>
+                        <p>Dec 30 2020 at 4:12pm</p>
+                    </div>
+                    <div class="col-12 msg-text">
+                        <p class="mt-3">I'm getting 403 errors on the API. Does anyone know what's going on?</p>
+                    </div>
+                </div>
+                <br>
+                <div class="msg-box">
+                    <div class="col-1">
+                        <img src="martyn-linkedin-profile-picture.jpeg" 
+                            alt="martyn-linkedin-profile-picture" 
+                            class="avatar" width="40px" height="40px"/>
+                    </div>
+                    <div class="col-11 msg-title">
+                        <h5><b>Martyn Conkling</b></h5>
+                        <p>Dec 30 2020 at 4:12pm</p>
+                    </div>
+                    <div class="col-12 msg-text">
+                        <p class="mt-3">Hey Connor, I was rebooting the server. Try it now and lemme know if you run into any more issues</p>
+                    </div>
+                </div>
+                <br>
+                <div class="msg-box">
+                    <div class="col-1">
+                        <img src="connor-profile-picture.jpeg" 
+                            alt="connor-profile-picture" 
+                            class="avatar" width="40px" height="40px"/>
+                    </div>
+                    <div class="col-11 msg-title">
+                        <h5><b>Connor Steele</b></h5>
+                        <p>Dec 30 2020 at 4:12pm</p>
+                    </div>
+                    <div class="col-12 msg-text">
+                        <p class="mt-3">It works now! Thanks!</p>
+                    </div>
+                </div>     
+                <div id="input-container" class="chat-box">
+                <textarea 
+                    class="form-control" 
+                    placeholder="Enter your message here"></textarea>
+                </div>
+            </div><!-- end of right column -->     
+        </div><!-- .my-row -->
+    </div> 
 </body>
 </html>
+
